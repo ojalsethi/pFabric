@@ -1,16 +1,10 @@
-# README #
-
-Set up a Linux or Ubuntu VM instance to run this experiment.
-
-### To Setup: ###
-
-1. git clone https://bitbucket.org/cs244ms/pfabric_v2.git
-2. cd pfabric_v2
-3. chmod a+x setupenv.sh and run.sh
-4. Run sudo ./setupenv.sh.  You will have to respond to some yes/no prompts during the execution of this script. 
-
-### To Run Experiment: ###
-
-1. Inside pfabric_v2, run with: sudo ./run.sh
-2. Resulting plots will be saved in outputs folder
-3. The entire experiment will take ~2.5 hours to run and each run will overwrite the current outputs folder.
+1.	Setup a Linux or Ubuntu VM instance to run the code.
+2.	To set up the environment, run the below code
+-	git clone https://github.com/ojalsethi/pFabric.git
+-	cd pfabric_v2
+-	chmod a+x setupenv.sh
+-	chmod a+x run.sh
+3.	Download all the required dependencies like mininet etc by running sudo ./setupenv.sh
+4.	To run the implementation, execute sudo ./run.sh
+5.	Result of the experiment would be saved in the ‘results’ folder. 
+The experiment takes around 2 hrs to complete.
