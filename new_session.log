@@ -1,0 +1,839 @@
+Script started on 2022-03-12 23:19:23+00:00 [TERM="screen.xterm-256color" TTY="/dev/pts/1" COLUMNS="158" LINES="36"]
+root@o-instance-3:/home/og_acn/pfabric_v2# nohup ./run.sh & 1>>sesion_[K[K[K[K[K[K[Krun_log.[K[K[K[Ku[Koutput.o[Klog 2>> [1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Krun_error.log &
+[1] 40466
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# nohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cryu-manager[Kpython3 ryu/ryu/app/Hedera/fattree4.py[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ryu/[Knslookup 10.188.0.2[4Pping[C[C[C[C[C[C[C[C[C[C[C[7Pifconfigcat /var/log/commands.logd hedera_implementation/..[K[3Pllcd ..ovs-ofctl add-flow OpenFlow13[K[Kpython3 ryu/ryu/app/Hedera/fattree4.py[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Covs-ofctl[K add-flow OpenFlow13cd ..[K[3Pllcd ..hedera_implementation/at /var/log/commands.logifconfig[Kping 10.188.0.2[4@nslookup[C[C[C[C[C[C[C[C[C[C[C[12Pcd ryu/vi ryu/ryu/app/Hedera/fattree4.py[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cryu-manager[Knohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kpip pip[K[K[K[K2 insrall[K[K[K[Ktall mayt[K[Ktplotlib [K[K[K[K[K[K[K[K[K[K[Knumpy
+Requirement already satisfied: numpy in /usr/lib/python2.7/dist-packages
+[33mYou are using pip version 9.0.3, however version 22.0.4 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+root@o-instance-3:/home/og_acn/pfabric_v2# pip2 install numpy[K[K[K[K[Kam[K[Kmatplotb[Klib
+Collecting matplotlib
+  Using cached https://files.pythonhosted.org/packages/9d/40/5ba7d4a3f80d39d409f21899972596bf62c8606f1406a825029649eaa439/matplotlib-2.2.5-cp27-cp27mu-manylinux1_x86_64.whl
+Requirement already satisfied: pytz in /usr/local/lib/python2.7/dist-packages (from matplotlib)
+Requirement already satisfied: backports.functools-lru-cache in /usr/local/lib/python2.7/dist-packages (from matplotlib)
+Requirement already satisfied: six>=1.10 in /usr/local/lib/python2.7/dist-packages (from matplotlib)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python2.7/dist-packages (from matplotlib)
+Collecting subprocess32 (from matplotlib)
+  Using cached https://files.pythonhosted.org/packages/32/c8/564be4d12629b912ea431f1a50eb8b3b9d00f1a0b1ceff17f266be190007/subprocess32-3.5.4.tar.gz
+Collecting kiwisolver>=1.0.1 (from matplotlib)
+  Using cached https://files.pythonhosted.org/packages/3d/78/cb9248b2289ec31e301137cedbe4ca503a74ca87f88cdbfd2f8be52323bf/kiwisolver-1.1.0-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting python-dateutil>=2.1 (from matplotlib)
+  Using cached https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 (from matplotlib)
+  Using cached https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl
+Requirement already satisfied: numpy>=1.7.1 in /usr/lib/python2.7/dist-packages (from matplotlib)
+Requirement already satisfied: setuptools in /usr/local/lib/python2.7/dist-packages (from kiwisolver>=1.0.1->matplotlib)
+Building wheels for collected packages: subprocess32
+  Running setup.py bdist_wheel for subprocess32 ... [?25l- \ | / - \ | / - \ | error
+  Complete output from command /usr/bin/python2 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-Andvi8/subprocess32/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmplo0Rj2pip-wheel- --python-tag cp27:
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-2.7
+  copying subprocess32.py -> build/lib.linux-x86_64-2.7
+  running build_ext
+  running build_configure
+  checking for gcc... gcc
+  checking whether the C compiler works... yes
+  checking for C compiler default output file name... a.out
+  checking for suffix of executables...
+  checking whether we are cross compiling... no
+  checking for suffix of object files... o
+  checking whether we are using the GNU C compiler... yes
+  checking whether gcc accepts -g... yes
+  checking for gcc option to accept ISO C89... none needed
+  checking how to run the C preprocessor... gcc -E
+  checking for grep that handles long lines and -e... /usr/bin/grep
+  checking for egrep... /usr/bin/grep -E
+  checking for ANSI C header files... yes
+  checking for sys/types.h... yes
+  checking for sys/stat.h... yes
+  checking for stdlib.h... yes
+  checking for string.h... yes
+  checking for memory.h... yes
+  checking for strings.h... yes
+  checking for inttypes.h... yes
+  checking for stdint.h... yes
+  checking for unistd.h... yes
+  checking for unistd.h... (cached) yes
+  checking fcntl.h usability... yes
+  checking fcntl.h presence... yes
+  checking for fcntl.h... yes
+  checking signal.h usability... yes
+  checking signal.h presence... yes
+  checking for signal.h... yes
+  checking sys/cdefs.h usability... yes
+  checking sys/cdefs.h presence... yes
+  checking for sys/cdefs.h... yes
+  checking for sys/types.h... (cached) yes
+  checking for sys/stat.h... (cached) yes
+  checking sys/syscall.h usability... yes
+  checking sys/syscall.h presence... yes
+  checking for sys/syscall.h... yes
+  checking for dirent.h that defines DIR... yes
+  checking for library containing opendir... none required
+  checking for pipe2... yes
+  checking for setsid... yes
+  checking whether dirfd is declared... yes
+  configure: creating ./config.status
+  config.status: creating _posixsubprocess_config.h
+  building '_posixsubprocess32' extension
+  creating build/temp.linux-x86_64-2.7
+  x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-QDqKfA/python2.7-2.7.18=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/usr/include/python2.7 -c _posixsubprocess.c -o build/temp.linux-x86_64-2.7/_posixsubprocess.o
+  _posixsubprocess.c:16:10: fatal error: Python.h: No such file or directory
+     16 | #include "Python.h"
+        |          ^~~~~~~~~~
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+  
+  ----------------------------------------
+[31m  Failed building wheel for subprocess32[0m
+[?25h  Running setup.py clean for subprocess32
+Failed to build subprocess32
+Installing collected packages: subprocess32, kiwisolver, python-dateutil, pyparsing, matplotlib
+  Running setup.py install for subprocess32 ... [?25l- error
+    Complete output from command /usr/bin/python2 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-Andvi8/subprocess32/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-iq1noH-record/install-record.txt --single-version-externally-managed --compile:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-2.7
+    copying subprocess32.py -> build/lib.linux-x86_64-2.7
+    running build_ext
+    running build_configure
+     _posixsubprocess_config.h is already up to date.
+    building '_posixsubprocess32' extension
+    creating build/temp.linux-x86_64-2.7
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-QDqKfA/python2.7-2.7.18=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/usr/include/python2.7 -c _posixsubprocess.c -o build/temp.linux-x86_64-2.7/_posixsubprocess.o
+    _posixsubprocess.c:16:10: fatal error: Python.h: No such file or directory
+       16 | #include "Python.h"
+          |          ^~~~~~~~~~
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+[31mCommand "/usr/bin/python2 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-Andvi8/subprocess32/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-iq1noH-record/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-build-Andvi8/subprocess32/[0m
+[33mYou are using pip version 9.0.3, however version 22.0.4 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[?25hroot@o-instance-3:/home/og_acn/pfabric_v2# pip2 install matplotlib[5Pnumpynohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cryu-manager[Kpython3 ryu/ryu/app/Hedera/fattree4.py[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ryu/[Knslookup 10.188.0.2[4Pping[C[C[C[C[C[C[C[C[C[C[C[7Pifconfigcat /var/log/commands.logd hedera_implementation/..[K[3Pllcd ..ovs-ofctl add-flow OpenFlow13[K OpenFlow13cd ..[K[3Pllcd ..hedera_implementation/at /var/log/commands.logifconfig[Kping 10.188.0.2[4@nslookup[C[C[C[C[C[C[C[C[C[C[C[12Pcd ryu/vi ryu/ryu/app/Hedera/fattree4.py[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cryu-manager[Knohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Ppip2 install numpymatplotlib[Kpip2 install matplotlib[5Pnumpynohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cryu-manager[Kpython3 ryu/ryu/app/Hedera/fattree4.py[5Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ryu/[Knslookup 10.188.0.2[12Pcd ryu/vi ryu/ryu/app/Hedera/fattree4.py[5@python3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cryu-manager[Knohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Ppip2 install numpymatplotlib[Kpip2 install matplotlib[5Pnumpynohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cryu-manager[Kpython3 ryu/ryu/app/Hedera/fattree4.pyryu-manager[Knohup ./run.sh 1>>run_output.log 2>>run_error.log &[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Ppip2 install numpymatplotlib[K
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+update-alternatives: using /usr/bin/python3 to provide /usr/bin/python (python) in auto mode
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# python3
+Python 3.8.10 (default, Nov 26 2021, 20:14:08) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ext[Kit9)
+  File "<stdin>", line 1
+    exit9)
+         ^
+SyntaxError: unmatched ')'
+>>> exit()
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# python2
+Python 2.7.18 (default, Mar  8 2021, 13:02:45) 
+[GCC 9.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# python
+Python 3.8.10 (default, Nov 26 2021, 20:14:08) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# update-alternatives --install /usr/bin/python python /usr/bin/python2 1
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# update-alternatives --install /usr/bin/python python /usr/bin/python2 1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython[K
+Python 3.8.10 (default, Nov 26 2021, 20:14:08) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ei[Kxit()
+root@o-instance-3:/home/og_acn/pfabric_v2# pythonupdate-alternatives --install /usr/bin/python python /usr/bin/python2 1
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# python
+Python 3.8.10 (default, Nov 26 2021, 20:14:08) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# python2
+Python 2.7.18 (default, Mar  8 2021, 13:02:45) 
+[GCC 9.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ei[Kxit()
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# alias python=p[K'python2[K'
+root@o-instance-3:/home/og_acn/pfabric_v2# alias python='python'[K2'
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# ll
+total 128
+drwxr-xr-x 7 root root  4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root  4096 Mar 12 23:11 [01;34m..[0m/
+drwxr-xr-x 8 root root  4096 Mar 12 23:11 [01;34m.git[0m/
+-rw-r--r-- 1 root root   205 Mar 12 23:11 .gitignore
+-rw-r--r-- 1 root root   552 Mar 12 23:11 README.md
+drwxr-xr-x 2 root root  4096 Mar 12 23:11 [01;34mcongestion[0m/
+-rw-r--r-- 1 root root  3440 Mar 12 23:11 fattopo.py
+-rw-r--r-- 1 root root  3443 Mar 12 23:12 fattopo.pyc
+drwxr-xr-x 2 root root  4096 Mar 12 23:11 [01;34mflows[0m/
+-rw-r--r-- 1 root root  1734 Mar 12 23:11 flows.py
+-rw-r--r-- 1 root root  2347 Mar 12 23:12 flows.pyc
+drwxr-xr-x 9 root root  4096 Mar 12 23:11 [01;34mmininet[0m/
+-rw-r--r-- 1 root root 16384 Mar 12 23:28 new_session.log
+drwxr-xr-x 3 root root  4096 Mar 12 23:21 [01;34moutputs[0m/
+-rw-r--r-- 1 root root  6717 Mar 12 23:11 pfabric.py
+-rw-r--r-- 1 root root  4879 Mar 12 23:11 plots.py
+-rw-r--r-- 1 root root  1273 Mar 12 23:11 receiver.py
+-rwxr-xr-x 1 root root   479 Mar 12 23:11 [01;32mrun.sh[0m*
+-rw-r--r-- 1 root root  1345 Mar 12 23:21 run_error.log
+-rw-r--r-- 1 root root     0 Mar 12 23:21 run_output.log
+-rw-r--r-- 1 root root   604 Mar 12 23:21 sender.pkl
+-rw-r--r-- 1 root root  6489 Mar 12 23:11 sender.py
+-rw-r--r-- 1 root root  5873 Mar 12 23:12 sender.pyc
+-rwxr-xr-x 1 root root   141 Mar 12 23:11 [01;32msetupenv.sh[0m*
+-rw-r--r-- 1 root root   586 Mar 12 23:11 startopo.py
+-rw-r--r-- 1 root root  1236 Mar 12 23:12 startopo.pyc
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# cd outputs/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# ll[Kl
+total 12
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Mar 12 23:21 [01;34m..[0m/
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [01;34mdata_tcp[0m/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# cd data_tcp/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ll
+total 12
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [01;34m..[0m/
+-rw-r--r-- 1 root root  520 Mar 12 23:25 load1.txt
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# tail -10[K[K0[K40f Hi Deepak,
+tail: option used in invalid context -- 4
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# Happy Friday!
+
+Command 'Happy' not found, did you mean:
+
+  command 'happy' from deb happy (1.19.11-1build3)
+  command 'tappy' from deb tappy (3.0-1)
+
+Try: apt install <deb name>
+
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# I'm writing to let you know that I currently don't have an update for you on the status of our Platform Engineering Internship. I hope to have more concrete updates for you next week. Thank you so much for your patience, and have a great weekend.^C
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# tail -40f load1.txt 
+1 0.00139498710632
+7 0.00424790382385
+2 0.00221300125122
+1 0.00168299674988
+3 0.00236010551453
+7 0.00262999534607
+1 0.00141096115112
+1 0.00131702423096
+267 0.0247139930725
+1 0.00119805335999
+3 0.00224590301514
+1 0.00166201591492
+267 0.0271921157837
+2107 0.182726860046
+7 0.00375890731812
+7 0.00353789329529
+1 0.00156903266907
+1 0.0014111995697
+1 0.00286197662354
+1 4.41074371338e-05
+2107 0.183362960815
+1 0.00156402587891
+2107 0.18518280983
+2107 0.181250095367
+267 0.0255069732666
+7 0.00517010688782
+2107 0.183255910873
+
+^C
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ps e-[K[K-ef| grep p[K[K[K[K[K[K[K[K[K[Kux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 103388 12924 ?        Ss   Mar11   0:10 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Mar11   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Mar11   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Mar11   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kworker/0:0H-events_highpri]
+root           9  0.0  0.0      0     0 ?        I<   Mar11   0:00 [mm_percpu_wq]
+root          10  0.0  0.0      0     0 ?        S    Mar11   0:00 [rcu_tasks_rude_]
+root          11  0.0  0.0      0     0 ?        S    Mar11   0:00 [rcu_tasks_trace]
+root          12  0.0  0.0      0     0 ?        S    Mar11   0:00 [ksoftirqd/0]
+root          13  0.0  0.0      0     0 ?        I    Mar11   0:02 [rcu_sched]
+root          14  0.0  0.0      0     0 ?        S    Mar11   0:00 [migration/0]
+root          15  0.0  0.0      0     0 ?        S    Mar11   0:00 [idle_inject/0]
+root          16  0.0  0.0      0     0 ?        S    Mar11   0:00 [cpuhp/0]
+root          17  0.0  0.0      0     0 ?        S    Mar11   0:00 [cpuhp/1]
+root          18  0.0  0.0      0     0 ?        S    Mar11   0:00 [idle_inject/1]
+root          19  0.0  0.0      0     0 ?        S    Mar11   0:00 [migration/1]
+root          20  0.0  0.0      0     0 ?        S    Mar11   0:00 [ksoftirqd/1]
+root          22  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kworker/1:0H-kblockd]
+root          23  0.0  0.0      0     0 ?        S    Mar11   0:00 [kdevtmpfs]
+root          24  0.0  0.0      0     0 ?        I<   Mar11   0:00 [netns]
+root          25  0.0  0.0      0     0 ?        I<   Mar11   0:00 [inet_frag_wq]
+root          26  0.0  0.0      0     0 ?        S    Mar11   0:00 [kauditd]
+root          28  0.0  0.0      0     0 ?        S    Mar11   0:00 [khungtaskd]
+root          29  0.0  0.0      0     0 ?        S    Mar11   0:00 [oom_reaper]
+root          30  0.0  0.0      0     0 ?        I<   Mar11   0:00 [writeback]
+root          31  0.0  0.0      0     0 ?        S    Mar11   0:02 [kcompactd0]
+root          32  0.0  0.0      0     0 ?        SN   Mar11   0:00 [ksmd]
+root          33  0.0  0.0      0     0 ?        SN   Mar11   0:00 [khugepaged]
+root          79  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kintegrityd]
+root          80  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kblockd]
+root          81  0.0  0.0      0     0 ?        I<   Mar11   0:00 [blkcg_punt_bio]
+root          82  0.0  0.0      0     0 ?        I<   Mar11   0:00 [tpm_dev_wq]
+root          83  0.0  0.0      0     0 ?        I<   Mar11   0:00 [ata_sff]
+root          84  0.0  0.0      0     0 ?        I<   Mar11   0:00 [md]
+root          85  0.0  0.0      0     0 ?        I<   Mar11   0:00 [edac-poller]
+root          86  0.0  0.0      0     0 ?        I<   Mar11   0:00 [devfreq_wq]
+root          87  0.0  0.0      0     0 ?        S    Mar11   0:00 [watchdogd]
+root          89  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kworker/0:1H-kblockd]
+root          91  0.0  0.0      0     0 ?        S    Mar11   0:00 [kswapd0]
+root          92  0.0  0.0      0     0 ?        S    Mar11   0:00 [ecryptfs-kthrea]
+root          94  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kthrotld]
+root          95  0.0  0.0      0     0 ?        I<   Mar11   0:00 [acpi_thermal_pm]
+root          96  0.0  0.0      0     0 ?        S    Mar11   0:00 [scsi_eh_0]
+root          97  0.0  0.0      0     0 ?        I<   Mar11   0:00 [scsi_tmf_0]
+root          98  0.0  0.0      0     0 ?        I<   Mar11   0:00 [nvme-wq]
+root          99  0.0  0.0      0     0 ?        I<   Mar11   0:00 [nvme-reset-wq]
+root         100  0.0  0.0      0     0 ?        I<   Mar11   0:00 [nvme-delete-wq]
+root         101  0.0  0.0      0     0 ?        I<   Mar11   0:00 [vfio-irqfd-clea]
+root         103  0.0  0.0      0     0 ?        I<   Mar11   0:01 [kworker/1:1H-kblockd]
+root         104  0.0  0.0      0     0 ?        I<   Mar11   0:00 [mld]
+root         105  0.0  0.0      0     0 ?        I<   Mar11   0:00 [ipv6_addrconf]
+root         115  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kstrp]
+root         118  0.0  0.0      0     0 ?        I<   Mar11   0:00 [zswap-shrink]
+root         119  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kworker/u5:0]
+root         126  0.0  0.0      0     0 ?        I<   Mar11   0:00 [charger_manager]
+root         127  0.0  0.0      0     0 ?        S    Mar11   0:01 [jbd2/sda1-8]
+root         128  0.0  0.0      0     0 ?        I<   Mar11   0:00 [ext4-rsv-conver]
+root         131  0.0  0.0      0     0 ?        S    Mar11   0:00 [hwrng]
+root         171  0.0  1.3 164128 107084 ?       S<s  Mar11   0:13 /lib/systemd/systemd-journald
+root         200  0.0  0.0  19080  5384 ?        Ss   Mar11   0:00 /lib/systemd/systemd-udevd
+root         223  0.0  0.0      0     0 ?        I<   Mar11   0:00 [cryptd]
+root         321  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kaluad]
+root         322  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kmpath_rdacd]
+root         323  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kmpathd]
+root         324  0.0  0.0      0     0 ?        I<   Mar11   0:00 [kmpath_handlerd]
+root         325  0.0  0.2 280200 18008 ?        SLsl Mar11   0:11 /sbin/multipathd -d -s
+root         333  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop0]
+root         335  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop1]
+root         339  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop2]
+root         341  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop3]
+root         345  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop4]
+root         349  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop5]
+root         351  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop6]
+root         356  0.0  0.0      0     0 ?        S<   Mar11   0:00 [loop7]
+root         479  0.0  0.1 241136  9488 ?        Ssl  Mar11   0:04 /usr/lib/accountsservice/accounts-daemon
+root         498  0.0  0.2 787296 22244 ?        Ssl  Mar11   0:11 /usr/bin/google_osconfig_agent
+root         507  0.0  0.2  29540 18216 ?        Ss   Mar11   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         511  0.0  0.5 873408 45228 ?        Ssl  Mar11   0:05 /usr/lib/snapd/snapd
+root         549  0.0  0.2 854616 18664 ?        Ssl  Mar11   0:09 /usr/bin/google_guest_agent
+root         555  0.0  0.0   7360  2168 ttyS0    Ss+  Mar11   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         609  0.0  0.0   5836  1752 tty1     Ss+  Mar11   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         610  0.0  0.2 108112 20768 ?        Ssl  Mar11   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-sign
+root         633  0.0  0.1 236316  9052 ?        Ssl  Mar11   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root         769  0.0  0.0  12180  7372 ?        Ss   Mar11   0:04 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root         777  0.0  0.0  16680  7904 ?        Ss   Mar11   0:00 /lib/systemd/systemd-logind
+root         780  0.0  0.0   8544  2908 ?        Ss   Mar11   0:00 /usr/sbin/cron -f
+root       18503  0.0  0.0  10152  5560 ?        S<s  08:04   0:03 ovsdb-server /etc/openvswitch/conf.db -vconsole:emer -vsyslog:err -vfile:info --remote=puni
+root       18559  0.0  0.4 235336 39104 ?        S<Lsl 08:04   0:03 ovs-vswitchd unix:/var/run/openvswitch/db.sock -vconsole:emer -vsyslog:err -vfile:info --m
+root       34236  0.0  0.0      0     0 ?        I    22:34   0:00 [kworker/u4:0-events_unbound]
+root       34465  0.0  0.0      0     0 ?        I    22:52   0:00 [kworker/u4:1-ext4-rsv-conversion]
+root       34698  0.0  0.0      0     0 ?        I    23:08   0:00 [kworker/1:1-events_freezable]
+root       34713  0.0  0.1  13804  8824 ?        Ss   23:09   0:00 sshd: deepak [priv]
+root       34835  0.0  0.0  11172  4680 pts/0    S    23:09   0:00 sudo su
+root       34836  0.0  0.0  10116  4228 pts/0    S    23:09   0:00 su
+root       34837  0.0  0.0   9080  4124 pts/0    S    23:09   0:00 bash
+root       35456  0.0  0.0      0     0 ?        I    23:12   0:00 [kworker/0:2-events]
+root       39308  0.0  0.0      0     0 ?        I    23:16   0:00 [kworker/0:3-ipv6_addrconf]
+root       40321  0.0  0.0   8580  3104 pts/0    S+   23:19   0:00 screen -S ojal_run
+root       40322  0.0  0.0   8888  2624 ?        Rs   23:19   0:00 SCREEN -S ojal_run
+root       40323  0.0  0.0   8968  3796 pts/1    Ss   23:19   0:00 /bin/bash
+root       40344  0.0  0.0   7364  2396 pts/1    S+   23:19   0:00 script new_session.log
+root       40345  0.0  0.0   8968  4016 pts/2    Ss   23:19   0:00 bash -i
+root       40466  0.0  0.0   8624  3168 pts/2    S    23:21   0:00 /bin/bash ./run.sh
+root       40515  0.0  0.0  11588  4760 pts/2    S    23:21   0:00 sudo python pfabric.py -o outputs/ -c tcp -t data -n 28 --time 240
+root       40516  0.0  0.1  22768 14848 pts/2    S    23:21   0:00 python pfabric.py -o outputs/ -c tcp -t data -n 28 --time 240
+root       40521  0.0  0.0   8704  3604 pts/3    Ss+  23:21   0:00 bash --norc --noediting -is mininet:c0
+root       40528  0.0  0.0   8704  3464 pts/4    Ss+  23:21   0:00 bash --norc --noediting -is mininet:h1
+root       40530  0.0  0.0   8704  3588 pts/5    Ss+  23:21   0:00 bash --norc --noediting -is mininet:h2
+root       40532  0.0  0.0   8704  3524 pts/6    Ss+  23:21   0:00 bash --norc --noediting -is mininet:h3
+root       40534  0.0  0.0   8704  3616 pts/7    Ss+  23:21   0:00 bash --norc --noediting -is mininet:h4
+root       40536  0.0  0.0   8704  3624 pts/8    Ss+  23:21   0:00 bash --norc --noediting -is mininet:h5
+root       40538  0.0  0.0   8704  3540 pts/9    Ss+  23:21   0:00 bash --norc --noediting -is mininet:h6
+root       40540  0.0  0.0   8704  3536 pts/10   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h7
+root       40542  0.0  0.0   8704  3628 pts/11   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h8
+root       40544  0.0  0.0   8704  3608 pts/12   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h9
+root       40546  0.0  0.0   8704  3616 pts/13   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h10
+root       40548  0.0  0.0   8704  3592 pts/14   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h11
+root       40550  0.0  0.0   8704  3528 pts/15   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h12
+root       40552  0.0  0.0   8704  3636 pts/16   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h13
+root       40554  0.0  0.0   8704  3584 pts/17   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h14
+root       40556  0.0  0.0   8704  3628 pts/18   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h15
+root       40558  0.0  0.0   8704  3524 pts/19   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h16
+root       40560  0.0  0.0   8704  3544 pts/20   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h17
+root       40562  0.0  0.0   8704  3544 pts/21   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h18
+root       40564  0.0  0.0   8704  3624 pts/22   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h19
+root       40566  0.0  0.0   8704  3596 pts/23   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h20
+root       40568  0.0  0.0   8704  3452 pts/24   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h21
+root       40570  0.0  0.0   8704  3584 pts/25   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h22
+root       40572  0.0  0.0   8704  3596 pts/26   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h23
+root       40574  0.0  0.0   8704  3448 pts/27   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h24
+root       40576  0.0  0.0   8704  3628 pts/28   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h25
+root       40578  0.0  0.0   8704  3652 pts/29   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h26
+root       40580  0.0  0.0   8704  3520 pts/30   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h27
+root       40582  0.0  0.0   8704  3456 pts/31   Ss+  23:21   0:00 bash --norc --noediting -is mininet:h28
+root       40587  0.0  0.0   8836  3576 pts/32   Ss+  23:21   0:00 bash --norc --noediting -is mininet:s0
+root       41137  0.0  0.0   2644  2020 pts/3    S+   23:21   0:00 controller ptcp:6653
+root       41497  0.0  0.0  11172  4700 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41498  0.0  0.0  11168  4724 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41499  0.0  0.0  11176  4732 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41500  0.0  0.1  94020 12876 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41501  0.0  0.0  11172  4728 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41502  0.0  0.1  94020 12844 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41503  0.0  0.0  11172  4652 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41504  0.0  0.1  94020 12788 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41505  0.0  0.0  11176  4740 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41506  0.0  0.0  11168  4760 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41507  0.0  0.1  94020 13028 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41508  0.0  0.0  11172  4668 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41509  0.0  0.0  11172  4700 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41510  0.0  0.1  94020 13060 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41511  0.0  0.0  11172  4672 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41512  0.0  0.1  94020 12876 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41513  0.0  0.0  11168  4712 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41514  0.0  0.1  94020 12956 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41515  0.0  0.1  94020 13020 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41516  0.0  0.0  11176  4732 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41517  0.0  0.1  94020 12780 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41518  0.0  0.0  11172  4696 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41520  0.0  0.0  11176  4664 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41521  0.0  0.1  94020 12864 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41522  0.0  0.0  11176  4660 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41523  0.0  0.0  11168  4660 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41524  0.0  0.0  11168  4740 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41525  0.0  0.1  20288 12976 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41526  0.0  0.1  94020 12900 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41527  0.0  0.0  11172  4724 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41528  0.0  0.0  11172  4672 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41529  0.0  0.0  11168  4752 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41530  0.0  0.1  94020 12960 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41531  0.0  0.0  11168  4748 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41532  0.0  0.1  94020 12956 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41533  0.0  0.1  94020 12924 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41534  0.0  0.1  94020 12992 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41535  0.0  0.0  11176  4748 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41536  0.0  0.1  94020 13084 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41537  0.0  0.1  94020 12936 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41538  0.0  0.0  11172  4760 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41539  0.0  0.1  94020 12864 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41540  0.0  0.1  94020 12940 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41541  0.0  0.0  11176  4812 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41543  0.0  0.0  11172  4748 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41544  0.0  0.0  11176  4680 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41545  0.0  0.0  11172  4664 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41546  0.0  0.0  11176  4816 ?        Ss   23:21   0:00 sudo python receiver.py 8000 tcp 240
+root       41548  0.0  0.1  94020 13012 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41551  0.0  0.1  94020 12816 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41552  0.0  0.1  94020 12836 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41553  0.0  0.1  94020 13076 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41554  0.0  0.1  94020 13084 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41558  0.0  0.1  94020 12888 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41559  0.0  0.1  94020 13124 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41561  0.0  0.1  20288 12916 ?        S    23:21   0:00 python receiver.py 8000 tcp 240
+root       41582  0.0  0.0  11176  4728 ?        Ss   23:21   0:00 sudo python sender.py 0.1 240 outputs//data_tcp 28
+root       41584  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41585  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41588  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41589  0.0  0.1  18216 10088 ?        S    23:21   0:00 python sender.py 0.1 240 outputs//data_tcp 28
+root       41590  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41591  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41592  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41595  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41596  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41597  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41600  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41602  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       41604  0.0  0.0      0     0 ?        Zs   23:21   0:00 [sudo] <defunct>
+root       42464  0.0  0.0      0     0 ?        I    23:26   0:00 [kworker/1:0-cgroup_destroy]
+root       42575  0.0  0.0      0     0 ?        I    23:32   0:00 [kworker/1:2-cgroup_destroy]
+root       42583  0.0  0.0      0     0 ?        I    23:33   0:00 [kworker/u4:2-events_unbound]
+root       42609  0.0  0.0  10816  3484 pts/2    R+   23:34   0:00 ps -ux
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ps -uxtail -40f load1.txt [7PHappy Friday!tail -40f Hi Deepak,ll[Kcd data_tcp/ll[Kcd outputs/ll[Kalias python='python2'll[Kcd outputs/ll[Kcd data_tcp/ll[Ktail -40f Hi Deepak,[7PHappy Friday!tail -40f load1.txt ps -ux[K[KharekrishnA@108[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kll
+total 12
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [01;34m..[0m/
+-rw-r--r-- 1 root root  520 Mar 12 23:25 load1.txt
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# tail -40f load1.txt 
+1 0.00139498710632
+7 0.00424790382385
+2 0.00221300125122
+1 0.00168299674988
+3 0.00236010551453
+7 0.00262999534607
+1 0.00141096115112
+1 0.00131702423096
+267 0.0247139930725
+1 0.00119805335999
+3 0.00224590301514
+1 0.00166201591492
+267 0.0271921157837
+2107 0.182726860046
+7 0.00375890731812
+7 0.00353789329529
+1 0.00156903266907
+1 0.0014111995697
+1 0.00286197662354
+1 4.41074371338e-05
+2107 0.183362960815
+1 0.00156402587891
+2107 0.18518280983
+2107 0.181250095367
+267 0.0255069732666
+7 0.00517010688782
+2107 0.183255910873
+
+
+^C
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ps -ef| grep 40466
+root       [01;31m[K40466[m[K   40345  0 23:21 pts/2    00:00:00 /bin/bash ./run.sh
+root       40515   [01;31m[K40466[m[K  0 23:21 pts/2    00:00:00 sudo python pfabric.py -o outputs/ -c tcp -t data -n 28 --time 240
+root       42622   40345  0 23:35 pts/2    00:00:00 grep --color=auto [01;31m[K40466[m[K
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ps -ef| grep 40466tail -40f load1.txt 
+1 0.00139498710632
+7 0.00424790382385
+2 0.00221300125122
+1 0.00168299674988
+3 0.00236010551453
+7 0.00262999534607
+1 0.00141096115112
+1 0.00131702423096
+267 0.0247139930725
+1 0.00119805335999
+3 0.00224590301514
+1 0.00166201591492
+267 0.0271921157837
+2107 0.182726860046
+7 0.00375890731812
+7 0.00353789329529
+1 0.00156903266907
+1 0.0014111995697
+1 0.00286197662354
+1 4.41074371338e-05
+2107 0.183362960815
+1 0.00156402587891
+2107 0.18518280983
+2107 0.181250095367
+267 0.0255069732666
+7 0.00517010688782
+2107 0.183255910873
+
+
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B
+
+
+
+^C
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ll
+total 12
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [01;34m..[0m/
+-rw-r--r-- 1 root root  520 Mar 12 23:25 load1.txt
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# cd ..
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# ll
+total 12
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Mar 12 23:21 [01;34m..[0m/
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [01;34mdata_tcp[0m/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# cd data_tcp/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ll
+total 12
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [01;34m..[0m/
+-rw-r--r-- 1 root root  520 Mar 12 23:25 load1.txt
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# cd load1.txt 
+bash: cd: load1.txt: Not a directory
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# tai l-40f[K[K[K[K[K[Kl -40f 40466
+tail: cannot open '40466' for reading: No such file or directory
+tail: no files remaining
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# tail -40f 40466[K[K[K[K[Kload1.txt 
+1 0.00139498710632
+7 0.00424790382385
+2 0.00221300125122
+1 0.00168299674988
+3 0.00236010551453
+7 0.00262999534607
+1 0.00141096115112
+1 0.00131702423096
+267 0.0247139930725
+1 0.00119805335999
+3 0.00224590301514
+1 0.00166201591492
+267 0.0271921157837
+2107 0.182726860046
+7 0.00375890731812
+7 0.00353789329529
+1 0.00156903266907
+1 0.0014111995697
+1 0.00286197662354
+1 4.41074371338e-05
+2107 0.183362960815
+1 0.00156402587891
+2107 0.18518280983
+2107 0.181250095367
+267 0.0255069732666
+7 0.00517010688782
+2107 0.183255910873
+
+
+#######
+
+
+^C
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# [38P(reverse-i-search)`':[Cp': cd data_tcp/s': ps -ef| grep 40466[1@ [C[C[C[35@root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp#[C
+root       [01;31m[K40466[m[K   40345  0 23:21 pts/2    00:00:00 /bin/bash ./run.sh
+root       40515   [01;31m[K40466[m[K  0 23:21 pts/2    00:00:00 sudo python pfabric.py -o outputs/ -c tcp -t data -n 28 --time 240
+root       42662   40345  0 23:40 pts/2    00:00:00 grep --color=auto [01;31m[K40466[m[K
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# cd ..
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# ll
+total 12
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Mar 12 23:21 [01;34m..[0m/
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [01;34mdata_tcp[0m/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# cd. [K[K ..
+root@o-instance-3:/home/og_acn/pfabric_v2# ll
+total 156
+drwxr-xr-x 7 root root  4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root  4096 Mar 12 23:11 [01;34m..[0m/
+drwxr-xr-x 8 root root  4096 Mar 12 23:11 [01;34m.git[0m/
+-rw-r--r-- 1 root root   205 Mar 12 23:11 .gitignore
+-rw-r--r-- 1 root root   552 Mar 12 23:11 README.md
+drwxr-xr-x 2 root root  4096 Mar 12 23:11 [01;34mcongestion[0m/
+-rw-r--r-- 1 root root  3440 Mar 12 23:11 fattopo.py
+-rw-r--r-- 1 root root  3443 Mar 12 23:12 fattopo.pyc
+drwxr-xr-x 2 root root  4096 Mar 12 23:11 [01;34mflows[0m/
+-rw-r--r-- 1 root root  1734 Mar 12 23:11 flows.py
+-rw-r--r-- 1 root root  2347 Mar 12 23:12 flows.pyc
+drwxr-xr-x 9 root root  4096 Mar 12 23:11 [01;34mmininet[0m/
+-rw-r--r-- 1 root root 45056 Mar 12 23:35 new_session.log
+drwxr-xr-x 3 root root  4096 Mar 12 23:21 [01;34moutputs[0m/
+-rw-r--r-- 1 root root  6717 Mar 12 23:11 pfabric.py
+-rw-r--r-- 1 root root  4879 Mar 12 23:11 plots.py
+-rw-r--r-- 1 root root  1273 Mar 12 23:11 receiver.py
+-rwxr-xr-x 1 root root   479 Mar 12 23:11 [01;32mrun.sh[0m*
+-rw-r--r-- 1 root root  1345 Mar 12 23:21 run_error.log
+-rw-r--r-- 1 root root     0 Mar 12 23:21 run_output.log
+-rw-r--r-- 1 root root   604 Mar 12 23:21 sender.pkl
+-rw-r--r-- 1 root root  6489 Mar 12 23:11 sender.py
+-rw-r--r-- 1 root root  5873 Mar 12 23:12 sender.pyc
+-rwxr-xr-x 1 root root   141 Mar 12 23:11 [01;32msetupenv.sh[0m*
+-rw-r--r-- 1 root root   586 Mar 12 23:11 startopo.py
+-rw-r--r-- 1 root root  1236 Mar 12 23:12 startopo.pyc
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# vi run.sh 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;36r[?12h[?12l[22;2t[22;1t[27m[29m[m[H[2J[?25l[36;1H"run.sh" 26L, 479C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m#!/bin/bash
+
+#clean up mininet[m
+sudo mn [35m-c[m
+
+[36mhosts[m=[31m28[m
+[36mruntime[m=[31m240[m
+[36msavedir[m=[38;5;130m"[m[31moutputs/[m[38;5;130m"
+declare[m [35m-a[m [36mtraffic[m=[35m([m[38;5;130m"[m[31mdata[m[38;5;130m"[m [38;5;130m"[m[31mweb[m[38;5;130m"[m[35m)[m
+[34m#declare -a cong=("tcp" "mintcp" "none")[m
+[38;5;130mdeclare[m [35m-a[m [36mcong[m=[35m([m[38;5;130m"[m[31mtcp[m[38;5;130m"[m [38;5;130m"[m[31mmintcp[m[38;5;130m"[m[35m)[m
+
+sudo [38;5;130mrm[m [35m-rf[m [35m$savedir[m
+
+[38;5;130mfor[m t [38;5;130min[m [38;5;130m"[m[35m${traffic[[m@[35m]}[m[38;5;130m"
+do
+[m    [38;5;130mfor[m c [38;5;130min[m [38;5;130m"[m[35m${cong[[m@[35m]}[m[38;5;130m"
+[m    [38;5;130mdo[m[19;9Hsudo python pfabric.py [38;5;130m-o[m [35m$savedir[m [38;5;130m-c[m [35m$c[m [38;5;130m-t[m [35m$t[m [38;5;130m-n[m [35m$hosts[m [35m--time[m [35m$runtime[m
+    [38;5;130mdone[m[21;9Hsudo pkill python[22;9Hsudo mn [38;5;130m-c[m [38;5;130m>[m /dev/null[23;9H[38;5;130msleep[m 30s
+[38;5;130mdone[m
+
+sudo python plots.py [35m-o[m [35m$savedir[m
+[94m~                                                                                                                                                             [28;1H~                                                                                                                                                             [29;1H~                                                                                                                                                             [30;1H~                                                                                                                                                             [31;1H~                                                                                                                                                             [32;1H~                                                                                                                                                             [33;1H~                                                                                                                                                             [34;1H~                                                                                                                                                             [35;1H~                                                                                                                                                             [m[36;141H1,1[11CAll[1;1H[?25h[27m[29m[m[H[2J[?25l[1;1H[96m#!/bin/bash
+
+#clean up mininet[m
+sudo mn [38;5;224m-c[m
+
+[1m[96mhosts[m=[95m28[m
+[1m[96mruntime[m=[95m240[m
+[1m[96msavedir[m=[93m"[m[95moutputs/[m[93m"
+declare[m [38;5;224m-a[m [1m[96mtraffic[m=[38;5;81m([m[93m"[m[95mdata[m[93m"[m [93m"[m[95mweb[m[93m"[m[38;5;81m)[m
+[96m#declare -a cong=("tcp" "mintcp" "none")[m
+[93mdeclare[m [38;5;224m-a[m [1m[96mcong[m=[38;5;81m([m[93m"[m[95mtcp[m[93m"[m [93m"[m[95mmintcp[m[93m"[m[38;5;81m)[m
+
+sudo [93mrm[m [38;5;224m-rf[m [38;5;81m$savedir[m
+
+[93mfor[m t [93min[m [93m"[m[38;5;81m${traffic[[m@[38;5;81m]}[m[93m"
+do
+[m    [93mfor[m c [93min[m [93m"[m[38;5;81m${cong[[m@[38;5;81m]}[m[93m"
+[m    [93mdo[m[19;9Hsudo python pfabric.py [93m-o[m [38;5;81m$savedir[m [93m-c[m [38;5;81m$c[m [93m-t[m [38;5;81m$t[m [93m-n[m [38;5;81m$hosts[m [38;5;224m--time[m [38;5;81m$runtime[m
+    [93mdone[m[21;9Hsudo pkill python[22;9Hsudo mn [93m-c[m [93m>[m /dev/null[23;9H[93msleep[m 30s
+[93mdone[m
+
+sudo python plots.py [38;5;224m-o[m [38;5;81m$savedir[m
+[94m~                                                                                                                                                             [28;1H~                                                                                                                                                             [29;1H~                                                                                                                                                             [30;1H~                                                                                                                                                             [31;1H~                                                                                                                                                             [32;1H~                                                                                                                                                             [33;1H~                                                                                                                                                             [34;1H~                                                                                                                                                             [35;1H~                                                                                                                                                             [m[36;141H1,1[11CAll"run.sh" 26L, 479C[1;1H[?25h[?25l[36;131H:[1;1H[36;1H[K[36;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[36;1H[K[36;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0troot@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# cd outputs/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# ll
+total 12
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Mar 12 23:41 [01;34m..[0m/
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [01;34mdata_tcp[0m/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# cd data_tcp/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# ll
+total 12
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [01;34m..[0m/
+-rw-r--r-- 1 root root  520 Mar 12 23:25 load1.txt
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# tail -40f load1.txt 
+1 0.00139498710632
+7 0.00424790382385
+2 0.00221300125122
+1 0.00168299674988
+3 0.00236010551453
+7 0.00262999534607
+1 0.00141096115112
+1 0.00131702423096
+267 0.0247139930725
+1 0.00119805335999
+3 0.00224590301514
+1 0.00166201591492
+267 0.0271921157837
+2107 0.182726860046
+7 0.00375890731812
+7 0.00353789329529
+1 0.00156903266907
+1 0.0014111995697
+1 0.00286197662354
+1 4.41074371338e-05
+2107 0.183362960815
+1 0.00156402587891
+2107 0.18518280983
+2107 0.181250095367
+267 0.0255069732666
+7 0.00517010688782
+2107 0.183255910873
+
+
+^C
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs/data_tcp# d[Kcd ..
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# ll
+total 12
+drwxr-xr-x 3 root root 4096 Mar 12 23:21 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Mar 12 23:41 [01;34m..[0m/
+drwxr-xr-x 2 root root 4096 Mar 12 23:21 [01;34mdata_tcp[0m/
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# 
+root@o-instance-3:/home/og_acn/pfabric_v2/outputs# cd ..
+root@o-instance-3:/home/og_acn/pfabric_v2# ll
+total 168
+drwxr-xr-x 7 root root  4096 Mar 12 23:41 [0m[01;34m.[0m/
+drwxr-xr-x 3 root root  4096 Mar 12 23:11 [01;34m..[0m/
+drwxr-xr-x 8 root root  4096 Mar 12 23:11 [01;34m.git[0m/
+-rw-r--r-- 1 root root   205 Mar 12 23:11 .gitignore
+-rw-r--r-- 1 root root   552 Mar 12 23:11 README.md
+drwxr-xr-x 2 root root  4096 Mar 12 23:11 [01;34mcongestion[0m/
+-rw-r--r-- 1 root root  3440 Mar 12 23:11 fattopo.py
+-rw-r--r-- 1 root root  3443 Mar 12 23:12 fattopo.pyc
+drwxr-xr-x 2 root root  4096 Mar 12 23:11 [01;34mflows[0m/
+-rw-r--r-- 1 root root  1734 Mar 12 23:11 flows.py
+-rw-r--r-- 1 root root  2347 Mar 12 23:12 flows.pyc
+drwxr-xr-x 9 root root  4096 Mar 12 23:11 [01;34mmininet[0m/
+-rw-r--r-- 1 root root 57344 Mar 12 23:41 new_session.log
+drwxr-xr-x 3 root root  4096 Mar 12 23:21 [01;34moutputs[0m/
+-rw-r--r-- 1 root root  6717 Mar 12 23:11 pfabric.py
+-rw-r--r-- 1 root root  4879 Mar 12 23:11 plots.py
+-rw-r--r-- 1 root root  1273 Mar 12 23:11 receiver.py
+-rwxr-xr-x 1 root root   479 Mar 12 23:11 [01;32mrun.sh[0m*
+-rw-r--r-- 1 root root  1345 Mar 12 23:21 run_error.log
+-rw-r--r-- 1 root root     0 Mar 12 23:21 run_output.log
+-rw-r--r-- 1 root root   604 Mar 12 23:21 sender.pkl
+-rw-r--r-- 1 root root  6489 Mar 12 23:11 sender.py
+-rw-r--r-- 1 root root  5873 Mar 12 23:12 sender.pyc
+-rwxr-xr-x 1 root root   141 Mar 12 23:11 [01;32msetupenv.sh[0m*
+-rw-r--r-- 1 root root   586 Mar 12 23:11 startopo.py
+-rw-r--r-- 1 root root  1236 Mar 12 23:12 startopo.pyc
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# ps -ef| grep [21P(reverse-i-search)`':[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# [21P(reverse-i-search)`':[Cp': cd data_tcp/s': ps -ef| grep 40466[1@ [C[C[C[1@-[C[C[C[17@root@o-instance-3:/home/og_acn/pfabric_v2#[C
+root       [01;31m[K40466[m[K   40345  0 23:21 pts/2    00:00:00 /bin/bash ./run.sh
+root       40515   [01;31m[K40466[m[K  0 23:21 pts/2    00:00:00 sudo python pfabric.py -o outputs/ -c tcp -t data -n 28 --time 240
+root       42682   40345  0 23:42 pts/2    00:00:00 grep --color=auto [01;31m[K40466[m[K
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# kill -9 40466
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+[1]+  Killed                  nohup ./run.sh >> run_output.log 2>> run_error.log
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# kill -9 40466[5@ps -ef| grep[C[C[C[C[C[C
+root       42684   40345  0 23:42 pts/2    00:00:00 grep --color=auto [01;31m[K40466[m[K
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# 
+root@o-instance-3:/home/og_acn/pfabric_v2# ll
+total 168
+drwxr-xr-x 7 root root  4096 Mar 12 23:41 [0m[01
